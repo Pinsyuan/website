@@ -84,6 +84,16 @@ theme.typography.h5 = {
   color: theme.palette.text.main,
 };
 
+theme.typography.h6 = {
+  fontSize: '1.4rem',
+  fontWeight: 500,
+  fontFamily: 'Noto Sans TC',
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+  color: theme.palette.secondary.main,
+};
+
 theme.typography.body1 = {
   fontSize: '0.8rem',
   fontWeight: 400,

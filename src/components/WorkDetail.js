@@ -21,14 +21,14 @@ function WorkDetail(){
     <>
       <BgPaper />
       <Container sx={{ pt: 3 }}>
-        <Typography variant='h5' color='primary.main' sx={{ fontFamily: 'Cormorant Garamond' }}>{workData.title}</Typography>
-        <Typography variant='body1' color='text.main'>{workData.discription}</Typography>
-        {workData.ifLink && <Button variant='contained' endIcon={<ArrowForwardIcon />} sx={{ mt: 2.5, float: 'right' }} disableElevation onClick={() => handleLink(workData.link)}>see my work</Button>}
+        <Typography variant='h5' color='primary.main' sx={{ fontFamily: 'Cormorant Garamond', pb: 1 }}>{workData.title}</Typography>
+        <Typography variant='body1' color='text.main' sx={{ fontFamily: 'Cormorant Garamond' }}>{workData.discription}</Typography>
+        {workData.ifLink && <Button variant='contained' endIcon={<ArrowForwardIcon />} sx={{ mt: 2.5, float: 'right' }} disableElevation onClick={() => handleLink(workData.link)}>see the website</Button>}
         <BannerImg src={workData.banner} />
         {workData.content.map((item) => (
           <>
-            <Typography variant='h5' color='secondary.main' sx={{ fontWeight: 'regular' }}>{item.subtitle}</Typography>
-            <Typography variant='body1' color='text.main'>{item.text}</Typography>
+            <Typography variant='h6' sx={{ fontWeight: 'regular', pt: 3, pb: 1 }}>{item.subtitle}</Typography>
+            <Typography variant='body1' color='text.main'>&emsp;&emsp;{item.text}</Typography>
           </>
         ))}
       </Container>
@@ -43,7 +43,7 @@ const BgPaper = styled(Paper)`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 150%;
+  height: 200%;
   background-color: '#fff';
   z-index: -1;
 
