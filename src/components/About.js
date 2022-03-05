@@ -52,7 +52,7 @@ function About(){
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <Typography variant='body1' color='text.main'>「簡介」</Typography>
+            {/* <Typography variant='body1' color='text.main'>「簡介」</Typography> */}
 
             <Typography variant='h2' sx={{ mt: 4 }}>Education</Typography>
             <Typography variant='body1' color='secondary.main' sx={{ mt: 0.5 }}>National Taiwan University</Typography>
@@ -76,6 +76,11 @@ function About(){
             <Typography variant='body1' color='secondary.main' sx={{ mt: 0.5 }}>NTUEE Badminton Team</Typography>
             <Typography variant='body2' component='span'>Captain</Typography>
             <Typography variant='body2' component='span' sx={{ position: 'absolute', right: 60 }}>Aug. 2019 ‐ Jul. 2020</Typography>
+
+            <Typography variant='h2' sx={{ mt: 4 }}>Extracurricular Activities</Typography>
+            <Typography variant='body1' component='span' color='secondary.main' sx={{ mt: 0.5 }}>International Student Volunteer</Typography>
+            <Typography variant='body2' component='span' sx={{ position: 'absolute', right: 60 }}>Aug. 2020 ‐ Jan. 2021</Typography>
+          
             
           </Grid>
         </Grid>

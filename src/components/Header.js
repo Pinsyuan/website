@@ -11,7 +11,13 @@ function Header(props){
 				<LogoImg src={Logo} onClick={() => props.navigate('*')}/>
 			</LogoContainer>
 			<MenuGrid container spacing={0}>
-				<Grid item xs={12} sm={3.5} sx={{ justifyContent:'center' }} onClick={() => props.navigate('./Portfolio')}>
+				<Grid item xs={12} sm={6} sx={{ justifyContent:'center' }} onClick={() => props.navigate('./Portfolio')}>
+					<Typography variant="h4">PORTFOLIO</Typography>
+				</Grid>
+				<Grid item xs={12} sm={6} onClick={() => props.navigate('./About')}>
+					<Typography variant="h4">ABOUT</Typography>
+				</Grid>
+				{/* <Grid item xs={12} sm={3.5} sx={{ justifyContent:'center' }} onClick={() => props.navigate('./Portfolio')}>
 					<Typography variant="h4">PORTFOLIO</Typography>
 				</Grid>
 				<Grid item xs={12} sm={3.5} onClick={() => props.navigate('./About')}>
@@ -19,7 +25,7 @@ function Header(props){
 				</Grid>
 				<Grid item xs={12} sm={3.5} onClick={() => props.navigate('./Contact')}>
 					<Typography variant="h4">CONTACT</Typography>
-				</Grid>
+				</Grid> */}
 			</MenuGrid>
 		</HeaderContainer>
 	)
@@ -57,8 +63,10 @@ const LogoImg = styled.img`
 `
 
 const MenuGrid = styled(Grid)`
-	width: 70vw;
-	padding-left: 15vw;
+	/* width: 70vw; */
+	width: 50vw;
+	/* padding-left: 15vw; */
+	padding-left: 20vw;
 	text-align: center;
 	align-items: center;
 	cursor: pointer;

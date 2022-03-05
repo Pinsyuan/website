@@ -76,7 +76,7 @@ theme.typography.h4 = {
 
 theme.typography.h5 = {
   fontSize: '1.8rem',
-  fontWeight: 500,
+  fontWeight: 600,
   fontFamily: 'Noto Sans TC',
   [theme.breakpoints.up('md')]: {
     fontSize: '2.3rem',
